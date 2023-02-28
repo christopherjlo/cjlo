@@ -1,0 +1,188 @@
+/* Requirement-2.A */
+body {
+    /* Requirement-2.1 */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Requirement-2.4 */
+    background-color: #5ec6e6;
+
+    /* Requirement-2.6 */
+    margin: 0px;
+    padding: 4px;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    /* Requirement-2.15 */
+    position: sticky;
+    top: 0px;
+}
+
+ul.nav {
+    /* Requirement-2.8 */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    /* Requirement-2.14 */
+    overflow: hidden;
+    background-color: #3e85c7;
+}
+
+li.nav {
+
+    /* Requirement-2.11 */
+    float:left;
+
+    /* Requirement-2.13 */
+    clear: none;
+
+    /* Requirement-2.5 */
+    border: 1px solid rgb(175, 173, 173);
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    /* Requirement-2.2 */
+    text-decoration: none;
+
+    /* Requirement-2.12 */
+    display: block;
+
+    /* Requirement-2.3 */
+    color: white;
+    text-align: center;
+    padding:20px 22px;
+}
+
+/* Requirement-2.E */
+li a:hover {
+    background-color: #a5118c;
+}
+
+p {
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+}
+
+img.mahjong {
+    padding-right: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Requirement-2.7 */
+    width: 30%;
+}
+
+p~h2.spacer {
+    /* Requirement-2.16 */
+    visibility:hidden;
+}
+
+p {
+    
+    text-align: center;
+    width:50%;
+}
+
+p.food {
+    padding-top: 1em;
+}
+
+p.music {
+    margin: auto;
+    width: 40%;
+}
+
+/* Requirement-2.B */
+p, .foods {
+    /* Requirement-2.10 */
+    margin: auto;
+}
+
+/* Requirement-2.C */
+.foods {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+/* Requirement-2.F */
+.foods img {
+    width: 150px;
+}
+
+.absolute {
+    /* Requirement-2.9 */
+    position: absolute;
+
+    /* Requirement-2.17 */
+    z-index: -1; 
+}
+
+/* Requirement-2.D */
+#spacer {
+    margin-bottom: 100px;
+}
+
+
+.images {
+    margin: auto;
+    width: 50%;
+}
+
+.singing {
+    position: relative;
+    height: 242px;
+    left:220px;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.pong-frame {
+    position: relative;
+    margin: auto;
+    width: 600px;
+    height: 300px;
+    background-color: black;
+    z-index: -1;
+}
+
+div.pong {
+    width: 25px;
+    height: 25px;
+    background: white;
+    position: relative;
+    animation-name: pongbounce;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pongbounce {
+    0%   { left:0px; top:0px;}
+    10% {left:115px; top:275px;}
+    20% {left:230px; top: 0px;}
+    30% {left:345px; top:275px;}
+    40% {left:460px; top: 0px;}
+    50% {left: 575px; top:275px;}
+    60% {left:460px; top: 0px;}
+    70%{left:345px; top:275px;} 
+    80% {left:230px; top: 0px;}
+    90% {left:115px; top:275px;}
+    100% {left:0px; top: 0px;}
+}
